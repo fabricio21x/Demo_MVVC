@@ -1,0 +1,15 @@
+﻿<Window x:Class="Demo2.Views.CustomerInfoView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo2.Views"
+        mc:Ignorable="d"
+        Title="Confirmation window" Height="214" Width="546">
+    <DockPanel LastChildFill="True">
+        <Label DockPanel.Dock="Top" FontSize="40" FontFamily="Calibri" Foreground="#696969">Customer info SAVED!</Label>
+        <Rectangle DockPanel.Dock="Bottom" Height="70" Fill="#CECECE"></Rectangle>
+        <Label DockPanel.Dock="Top" Content="{Binding Info, FallbackValue= 'Your information was updated'}" VerticalContentAlignment="Bottom"/>
+
+    </DockPanel>
+</Window>
